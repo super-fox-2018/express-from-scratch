@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Student
+    </title>
+  </head>
+  <body>
+    <h1><%= titleStudent %></h1>
+    <div id= "container">
+      <form action="/students" method="post">
+        <label> First Name: </label><br>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="text" name="email" required><br><br>
+
+        <button type="submit" id="submitBtn" value = "submit"> Submit </button>
+      </form>
+    </div>
+  </body>
+</html>
