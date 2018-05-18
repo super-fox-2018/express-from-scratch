@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Teacher</title>
+  </head>
+  <body>
+  <h1>Data Teacher</h1>
+  <table border="1">
+  <thead>
+    <tr>
+      <th> fullname </th>
+      <th> gender </th>
+      <th> address </th>
+      <th> city </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.forEach(function(teacherData){ %>
+      <tr>
+        <td><%= teacherData.fullname %></td>
+        <td><%= teacherData.gender %></td>
+        <td><%= teacherData.address %></td>
+        <td><%= teacherData.city %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+  </table>
+  </body>
+
+</html>
