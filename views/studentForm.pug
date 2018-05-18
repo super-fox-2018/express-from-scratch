@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Student Form
+  body
+    h1 This is Form
+    p
+      a(href="/") Home
+    p Student Form
+    p 
+      a(href="/student") Teachers
+
+    form(action="/student" method="POST")
+      p
+        label(for="name") Name :
+      input(type="text" name="name")
+      p
+        label(for="birthplace") Birthplace :
+      input(type="text" name="birthplace")
+
+      p
+        label(for="birthdate") Birthdate :
+      input(type="date" name="date")
+
+      p
+        label(for="address") Address :
+      textarea(name="address", cols="30", rows="10")
+
+      p
+        input(type="submit")
+      
