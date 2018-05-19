@@ -6,10 +6,13 @@
 
 html
 head
-h1 NAMA
+h1 Daftar Data Diri
   body
-  h1 data1
 
-  p result
+  h1 Data FROM submitted form
 
-  p: name
+    p RESULT:
+
+    ul
+  each val, index in data
+    li= index + ': ' + val
