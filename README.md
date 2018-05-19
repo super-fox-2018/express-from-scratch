@@ -1,1 +1,1 @@
-# express-from-scratch
+# express-sequelize-crud
