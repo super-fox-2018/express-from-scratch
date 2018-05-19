@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Form Teachers</title>
+</head>
+
+<body>
+    <h1>Form Teachers</h1>
+    <table border='1'>
+        <tr>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>City</th>
+        </tr>
+        <% data.forEach(function(teachers){ %>
+            <tr>
+              <td><%= teachers.fullname %></td>
+              <td><%= teachers.address %></td>
+              <td><%= teachers.city %></td>
+            </tr>
+          <% }) %>
+    </table>
+</body>
+</html>
